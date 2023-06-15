@@ -121,9 +121,9 @@ const AddToy = () => {
             required
           >
             <option value="">Select a sub-category</option>
-            <option value="Option 1">Remote Control Cars</option>
-            <option value="Option 2">Pull-Back Cars</option>
-            <option value="Option 3">Transforming Cars</option>
+            <option value="Remote Control Cars">Remote Control Cars</option>
+            <option value="Pull-Back Cars">Pull-Back Cars</option>
+            <option value="Transforming Cars">Transforming Cars</option>
           </select>
         </div>
         <div className="mb-4">

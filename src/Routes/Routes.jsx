@@ -3,6 +3,7 @@ import Main from "../Layout/Main";
 import AddToy from "../Pages/AddAToy/AddAToy";
 import AllToys from "../Pages/AllToys/AllToys";
 import Details from "../Pages/Details/Details";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home/Home";
 import Login from "../Pages/Login/Login";
 import MyToys from "../Pages/MyToys/MyToys";
@@ -58,6 +59,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+  { path: "*", element: <ErrorPage></ErrorPage> },
 ]);
 
 export default router;
