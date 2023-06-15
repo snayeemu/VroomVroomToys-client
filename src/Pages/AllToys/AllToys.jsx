@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const AllToys = () => {
   const [toys, setToys] = useState([]);
 
   useEffect(() => {
-    fetch("fakeData.json")
+    fetch("http://localhost:5000/toys")
       .then((res) => res.json())
       .then((toys) => setToys(toys));
   }, []);
@@ -30,9 +31,11 @@ const AllToys = () => {
                 Available Quantity: {toy?.availableQuantity}
               </p>
               <div className="card-actions flex justify-end mt-4">
-                <button className="btn bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
-                  View Details
-                </button>
+                <Link>
+                  <button className="btn bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
+                    View Details
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

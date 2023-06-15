@@ -7,7 +7,7 @@ const ShopByCategory = () => {
   const [activeTab, setActiveTab] = useState("Remote Control Cars");
   const [toys, setToyData] = useState([]);
   useEffect(() => {
-    fetch("/fakeData.json")
+    fetch("http://localhost:5000/toys")
       .then((res) => res.json())
       .then((toys) => setToyData(toys));
   }, []);
