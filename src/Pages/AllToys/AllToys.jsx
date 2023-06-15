@@ -31,7 +31,7 @@ const AllToys = () => {
                 Available Quantity: {toy?.availableQuantity}
               </p>
               <div className="card-actions flex justify-end mt-4">
-                <Link>
+                <Link to={`/toy/${toy._id}`}>
                   <button className="btn bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
                     View Details
                   </button>
