@@ -105,6 +105,7 @@ const AddToy = () => {
             id="sellerEmail"
             className="form-input mt-1 block w-full border rounded focus:border-blue-500 focus:outline-none"
             value={sellerEmail}
+            readOnly
             onChange={(e) => setSellerEmail(e.target.value)}
           />
         </div>
