@@ -20,7 +20,7 @@ const AllToys = () => {
             className="card bg-black text-white bg-opacity-80 w-96 shadow-xl"
           >
             <figure>
-              <img src={toy?.toyPhoto} alt="Instructor" />
+              <img src={toy?.toyPhoto} alt="Toy" />
             </figure>
             <div className="card-body">
               <h2 className="card-title text-xl font-bold mb-4">{toy?.name}</h2>

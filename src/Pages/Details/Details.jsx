@@ -8,7 +8,7 @@ const Details = () => {
     <div className="flex justify-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 py-1">
       <div className="card   bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-8 w-1/2  shadow-xl">
         <figure>
-          <img src={toy?.toyPhoto} alt="Instructor" />
+          <img src={toy?.toyPhoto} alt="Toy" />
         </figure>
         <div className="card-body">
           <h2 className="card-title text-xl font-bold mb-4">{toy?.name}</h2>
