@@ -1,7 +1,13 @@
+import Gallery from "../Gallery/Gallery";
+import Banner from "../Banner/Banner";
+import ShopByCategory from "../ShopByCategory/ShopByCategory";
+
 const Home = () => {
   return (
     <div>
-      <h2>home</h2>
+      <Banner></Banner>
+      <Gallery></Gallery>
+      <ShopByCategory></ShopByCategory>
     </div>
   );
 };

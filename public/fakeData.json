@@ -1,0 +1,101 @@
+[
+  {
+    "toyPhoto": "https://images.unsplash.com/photo-1456082902841-3335005c3082?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+    "name": "Sports Car",
+    "sellerName": "Toy Universe",
+    "sellerEmail": "toys@universe.com",
+    "subCategory": "Remote Control Cars",
+    "price": 29.99,
+    "rating": 4.5,
+    "availableQuantity": 10,
+    "detailDescription": "Experience the thrill of driving with this sleek and speedy sports car. Equipped with a remote control, it allows you to maneuver the car in any direction. Perfect for racing enthusiasts and kids who love cars."
+  },
+  {
+    "toyPhoto": "https://images.unsplash.com/photo-1508896694512-1eade558679c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "name": "Monster Truck",
+    "sellerName": "Toy Universe",
+    "sellerEmail": "toys@universe.com",
+    "subCategory": "Remote Control Cars",
+    "price": 19.99,
+    "rating": 4.2,
+    "availableQuantity": 5,
+    "detailDescription": "Get ready for some high-flying, adrenaline-pumping action with our monster truck. With its rugged design and powerful remote control, it can conquer any terrain. Let your imagination run wild as you create thrilling stunts and races."
+  },
+  {
+    "toyPhoto": "https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80",
+    "name": "Police Car",
+    "sellerName": "Toy Universe",
+    "sellerEmail": "toys@universe.com",
+    "subCategory": "Remote Control Cars",
+    "price": 24.99,
+    "rating": 4.7,
+    "availableQuantity": 8,
+    "detailDescription": "Enforce the law and protect the city with this realistic remote control police car. It comes with working lights and sirens for added excitement. Join the police force and embark on thrilling missions to maintain law and order."
+  },
+  {
+    "toyPhoto": "https://images.unsplash.com/photo-1536454891705-7f5a5c762d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=381&q=80",
+    "name": "Pull-Back Race Car",
+    "sellerName": "Speedy Toys",
+    "sellerEmail": "sales@speedytoys.com",
+    "subCategory": "Pull-Back Cars",
+    "price": 9.99,
+    "rating": 4.0,
+    "availableQuantity": 15,
+    "detailDescription": "Get ready for a race with our pull-back race car. Simply pull it back and watch it zoom forward with incredible speed. Perfect for racing competitions or challenging your friends to see whose car goes the farthest."
+  },
+  {
+    "toyPhoto": "https://images.unsplash.com/photo-1613536491198-a0afa1916b3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80",
+    "name": "Off-Road Buggy",
+    "sellerName": "Speedy Toys",
+    "sellerEmail": "sales@speedytoys.com",
+    "subCategory": "Pull-Back Cars",
+    "price": 12.99,
+    "rating": 4.3,
+    "availableQuantity": 7,
+    "detailDescription": "Conquer rough terrains and overcome obstacles with our off-road buggy. Its sturdy construction and powerful pull-back mechanism allow it to tackle any challenge. Get ready for thrilling off-road adventures!"
+  },
+  {
+    "toyPhoto": "https://images.unsplash.com/photo-1566137966241-b713866d24ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80",
+    "name": "Dragster",
+    "sellerName": "Speedy Toys",
+    "sellerEmail": "sales@speedytoys.com",
+    "subCategory": "Pull-Back Cars",
+    "price": 14.99,
+    "rating": 4.6,
+    "availableQuantity": 12,
+    "detailDescription": "Experience the speed and excitement of a dragster with our pull-back car. Pull it back, release, and watch it race forward in a flash. With its aerodynamic design and eye-catching colors, it's sure to impress!"
+  },
+  {
+    "toyPhoto": "https://images.unsplash.com/photo-1581235707960-23b7e8612c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80",
+    "name": "Convertible Car",
+    "sellerName": "Kids Emporium",
+    "sellerEmail": "info@kidsemporium.com",
+    "subCategory": "Transforming Cars",
+    "price": 34.99,
+    "rating": 4.8,
+    "availableQuantity": 8,
+    "detailDescription": "Experience the excitement of a car that can transform into a robot! This convertible car is not just a regular toy; it's a shape-shifting marvel. Watch as it seamlessly switches between car and robot mode, providing hours of entertainment and imaginative play."
+  },
+  {
+    "toyPhoto": "https://images.unsplash.com/photo-1609708536965-6e5b915b195b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80",
+    "name": "Race Track Set",
+    "sellerName": "Kids Emporium",
+    "sellerEmail": "info@kidsemporium.com",
+    "subCategory": "Transforming Cars",
+    "price": 49.99,
+    "rating": 4.4,
+    "availableQuantity": 3,
+    "detailDescription": "Create your own thrilling races with our race track set. It includes transforming cars, loops, and curves for endless racing fun. Challenge your friends to see who can master the track and cross the finish line first!"
+  },
+  {
+    "toyPhoto": "https://images.unsplash.com/photo-1532330393533-443990a51d10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "name": "Robot Car",
+    "sellerName": "Kids Emporium",
+    "sellerEmail": "info@kidsemporium.com",
+    "subCategory": "Transforming Cars",
+    "price": 19.99,
+    "rating": 4.1,
+    "availableQuantity": 6,
+    "detailDescription": "Enter the world of futuristic cars with our robot car. This unique toy can switch between car and robot modes, providing endless possibilities for imaginative play. Create exciting adventures as you transform it to suit your missions."
+  }
+]
