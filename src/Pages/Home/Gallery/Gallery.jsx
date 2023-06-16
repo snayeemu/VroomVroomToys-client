@@ -20,7 +20,7 @@ const Gallery = () => {
           {toys.map((toy) => (
             <Link
               key={toy?._id}
-              to={`/toys/${toy?._id}`}
+              to={`/toy/${toy?._id}`}
               className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg"
             >
               <img

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BsStarFill } from "react-icons/bs";
 import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const ShopByCategory = () => {
   const [activeTab, setActiveTab] = useState("Remote Control Cars");
@@ -69,7 +70,11 @@ const ShopByCategory = () => {
                     )
                   )}
                 </div>
-                <button className="btn btn-warning btn-sm">View Details</button>
+                <Link to={`/toy/${toy?._id}`}>
+                  <button className="btn btn-warning btn-sm">
+                    View Details
+                  </button>
+                </Link>
               </div>
             )
         )}
