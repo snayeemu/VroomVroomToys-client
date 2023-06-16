@@ -9,8 +9,8 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { getAuth } from "firebase/auth";
-import app from "../firebase/firebase.config";
 import axios from "axios";
+import app from "../firebase/firebase.config";
 
 export const AuthContext = createContext(false); // null is giving error
 

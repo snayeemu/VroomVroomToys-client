@@ -1,16 +1,15 @@
-import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../providers/AuthProvider";
+
 import { FaGoogle } from "react-icons/fa";
 import useAuth from "../../hooks/useAuth";
+import { useState } from "react";
 
 const Register = () => {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
-  const { googleSignIn } = useAuth();
 
   const navigate = useNavigate();
-  const { createUser, updateUserProfile } = useContext(AuthContext);
+  const { createUser, updateUserProfile, googleSignIn } = useAuth();
 
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
