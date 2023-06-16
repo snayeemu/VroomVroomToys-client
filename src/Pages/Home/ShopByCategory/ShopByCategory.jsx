@@ -18,8 +18,9 @@ const ShopByCategory = () => {
       <div className="space-x-4">
         <button
           onClick={() => setActiveTab("Remote Control Cars")}
-          className={`btn btn-warning mb-3 ${
-            activeTab === "Remote Control Cars" && "btn-active shadow-xl "
+          className={`btn mb-3 ${
+            activeTab === "Remote Control Cars" &&
+            "btn-active border-red-600 shadow-xl "
           }`}
         >
           Remote Control Cars
@@ -27,8 +28,9 @@ const ShopByCategory = () => {
 
         <button
           onClick={() => setActiveTab("Pull-Back Cars")}
-          className={`btn btn-warning mb-3 ${
-            activeTab === "Pull-Back Cars" && "btn-active shadow-xl "
+          className={`btn mb-3 ${
+            activeTab === "Pull-Back Cars" &&
+            "btn-active border-red-600 shadow-xl "
           }`}
         >
           Pull-Back Cars
@@ -36,8 +38,9 @@ const ShopByCategory = () => {
 
         <button
           onClick={() => setActiveTab("Transforming Cars")}
-          className={`btn btn-warning mb-3 ${
-            activeTab === "Transforming Cars" && "btn-active shadow-xl "
+          className={`btn mb-3 ${
+            activeTab === "Transforming Cars" &&
+            "btn-active border-red-600 shadow-xl "
           }`}
         >
           Transforming Cars
