@@ -10,6 +10,7 @@ import {
 } from "firebase/auth";
 import { getAuth } from "firebase/auth";
 import app from "../firebase/firebase.config";
+import axios from "axios";
 
 export const AuthContext = createContext(false); // null is giving error
 
@@ -26,6 +27,14 @@ const AuthProvider = ({ children }) => {
         setUser(user);
 
         // get and set token
+        axios
+          .post("http://localhost:5000/jwt", {
+            email: user.email,
+          })
+          .then((data) => {
+            // console.log(data.data.token);
+            localStorage.setItem("access-token", data.data.token);
+          });
 
         setLoading(false);
         // ...

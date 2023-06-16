@@ -1,23 +1,22 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import useAxiosSecure from "../../hooks/useAxiosSecure";
 
 const MyToys = () => {
   const { user } = useAuth();
   const [toys, setToys] = useState([]);
+  const [axiosSecure] = useAxiosSecure();
 
   const updateToy = () => {
     if (user)
-      fetch(`http://localhost:5000/my-toy/${user.email}`)
-        .then((res) => res.json())
-        .then((toys) => setToys(toys));
+      axiosSecure.get(`/my-toy/${user.email}`).then((res) => setToys(res.data));
   };
   useEffect(() => {
     if (user)
-      fetch(`http://localhost:5000/my-toy/${user.email}`)
-        .then((res) => res.json())
-        .then((toys) => setToys(toys));
-  }, [user]);
+      axiosSecure.get(`/my-toy/${user.email}`).then((res) => setToys(res.data));
+  }, [axiosSecure, user]);
 
   const handleDelete = (id) => {
     fetch(`http://localhost:5000/toy/${id}`, {
