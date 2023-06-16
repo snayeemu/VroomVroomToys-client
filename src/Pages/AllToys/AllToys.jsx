@@ -3,18 +3,39 @@ import { Link } from "react-router-dom";
 
 const AllToys = () => {
   const [toys, setToys] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     fetch("http://localhost:5000/toys")
       .then((res) => res.json())
-      .then((toys) => setToys(toys));
+      .then((toys) => setToys(toys.slice(0, 20)));
   }, []);
+
+  const handleSearchInputChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const filteredToys = toys.filter((toy) =>
+    toy.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div className="my-40 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-8">
       <h2 className="text-4xl text-white font-bold mb-8">All Toys</h2>
+      <div className="flex justify-center mb-4">
+        <input
+          type="text"
+          className="bg-white border-2 border-gray-300 focus:outline-none focus:border-purple-500 rounded-lg py-2 px-4"
+          placeholder="Search by Toy Name"
+          value={searchQuery}
+          onChange={handleSearchInputChange}
+        />
+        <button className="ml-4 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded">
+          Search
+        </button>
+      </div>
       <div className="md:grid grid-cols-3 gap-4 justify-between">
-        {toys.map((toy) => (
+        {filteredToys.map((toy) => (
           <div
             key={toy?._id}
             className="card bg-black text-white bg-opacity-80 w-96 shadow-xl"

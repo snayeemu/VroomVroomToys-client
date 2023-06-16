@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import AddToy from "../Pages/AddAToy/AddAToy";
 import AllToys from "../Pages/AllToys/AllToys";
+import Blog from "../Pages/Blog/Blog";
 import Details from "../Pages/Details/Details";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home/Home";
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "toy/update/:id",
         element: <UpdateToy></UpdateToy>,
+      },
+      {
+        path: "blogs",
+        element: <Blog></Blog>,
       },
     ],
   },
