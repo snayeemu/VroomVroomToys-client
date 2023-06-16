@@ -8,7 +8,7 @@ const ShopByCategory = () => {
   const [activeTab, setActiveTab] = useState("Remote Control Cars");
   const [toys, setToyData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/toys")
+    fetch("https://toy-server-xi.vercel.app/toys")
       .then((res) => res.json())
       .then((toys) => setToyData(toys));
   }, []);

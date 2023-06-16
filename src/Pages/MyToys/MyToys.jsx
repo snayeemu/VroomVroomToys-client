@@ -18,7 +18,7 @@ const MyToys = () => {
   }, [axiosSecure, user]);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/toy/${id}`, {
+    fetch(`https://toy-server-xi.vercel.app/toy/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

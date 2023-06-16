@@ -6,7 +6,7 @@ const AllToys = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/toys")
+    fetch("https://toy-server-xi.vercel.app/toys")
       .then((res) => res.json())
       .then((toys) => setToys(toys.slice(0, 20)));
   }, []);

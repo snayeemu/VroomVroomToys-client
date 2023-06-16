@@ -18,7 +18,7 @@ const UpdateToy = () => {
       detailDescription,
     };
 
-    fetch("http://localhost:5000/update-toy", {
+    fetch("https://toy-server-xi.vercel.app/update-toy", {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
