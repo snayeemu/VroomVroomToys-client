@@ -20,14 +20,14 @@ const Banner = () => {
           </p>
           <div className="mt-8">
             <Link
-              to="/products"
+              to="/all-toys"
               className="text-lg px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white rounded-full transition-colors duration-300"
             >
               Explore Our Toys
             </Link>
           </div>
           <div className="absolute top-0 right-0 py-4 pr-4">
-            <Link to="/cart" className="text-white flex items-center">
+            <Link to="/" className="text-white flex items-center">
               <FiShoppingCart className="mr-2" />
               <span className="font-semibold">View Cart</span>
             </Link>
