@@ -61,7 +61,7 @@ const NavBar = () => {
   return (
     <>
       <div className="navbar sticky z-10 top-0 bg-gradient-to-r from-purple-500 to-pink-500  max-w-screen-xl lg:justify-between font-bold text-3xl">
-        <div className="navbar-start">
+        <div className="navbar-start flex ">
           <div className="dropdown">
             <label
               tabIndex={0}
@@ -89,7 +89,7 @@ const NavBar = () => {
               tabIndex={0}
               className={`${
                 isSmallDeviceNavbarOpen ? "block" : "hidden"
-              } menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52`}
+              } menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 flex gap-5`}
             >
               {navOptions}
             </ul>
