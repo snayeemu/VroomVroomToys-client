@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
 
 const NavBar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [isSmallDeviceNavbarOpen, setIsSmallDeviceNavbarOpen] = useState(false);
 
   const handleLogout = () => {
     logOut()
@@ -61,7 +63,13 @@ const NavBar = () => {
       <div className="navbar sticky z-10 top-0 bg-gradient-to-r from-purple-500 to-pink-500  max-w-screen-xl lg:justify-between font-bold text-3xl">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden text-white">
+            <label
+              tabIndex={0}
+              className="btn btn-ghost lg:hidden text-white"
+              onClick={() =>
+                setIsSmallDeviceNavbarOpen(!isSmallDeviceNavbarOpen)
+              }
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -79,7 +87,9 @@ const NavBar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className={`${
+                isSmallDeviceNavbarOpen ? "block" : "hidden"
+              } menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52`}
             >
               {navOptions}
             </ul>
