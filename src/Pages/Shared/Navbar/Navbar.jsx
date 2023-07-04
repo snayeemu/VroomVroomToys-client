@@ -58,10 +58,10 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="navbar z-10 bg-gradient-to-r from-purple-500 to-pink-500 text-white max-w-screen-xl lg:justify-between font-bold text-3xl">
+      <div className="navbar sticky z-10 top-0 bg-gradient-to-r from-purple-500 to-pink-500  max-w-screen-xl lg:justify-between font-bold text-3xl">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -90,7 +90,8 @@ const NavBar = () => {
             </span>
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
+
+        <div className="navbar-center hidden lg:flex text-white">
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
       </div>
